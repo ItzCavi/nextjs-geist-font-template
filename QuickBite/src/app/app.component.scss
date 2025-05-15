@@ -1,0 +1,68 @@
+ion-header {
+  ion-toolbar {
+    --background: #ffffff;
+    --border-width: 0;
+    --padding-top: 1rem;
+    --padding-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+
+  .logo-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FF4B2B;
+    padding-left: 1rem;
+  }
+
+  ion-buttons {
+    margin-right: 1rem;
+
+    ion-button {
+      --padding-start: 8px;
+      --padding-end: 8px;
+
+      ion-icon {
+        font-size: 1.3rem;
+        color: #333333;
+      }
+
+      &:hover {
+        ion-icon {
+          color: #FF4B2B;
+        }
+      }
+    }
+  }
+}
+
+// Custom scrollbar
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FF4B2B;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e64226;
+}
+
+// Global styles
+ion-content {
+  --background: #f8f9fa;
+}
+
+// Animation for buttons
+ion-button {
+  transition: transform 0.2s ease;
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
